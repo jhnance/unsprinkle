@@ -8,7 +8,7 @@ const PhotoGridItem = ({ id, src, alt, tags }) => {
         <picture>
           <source
             type="image/avif"
-            srcset={`
+            srcSet={`
               ${src.replace('.jpg', '.avif')} 1x,
               ${src.replace('.jpg', '@2x.avif')} 2x,
               ${src.replace('.jpg', '@3x.avif')} 3x
@@ -16,7 +16,7 @@ const PhotoGridItem = ({ id, src, alt, tags }) => {
           />
           <source
             type="image/jpg"
-            srcset={`
+            srcSet={`
               ${src} 1x,
               ${src.replace('.jpg', '@2x.jpg')} 2x,
               ${src.replace('.jpg', '@3x.jpg')} 3x
